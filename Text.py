@@ -15,3 +15,18 @@ class Text:
             else:
                 value |= number
         return False
+
+    @staticmethod
+    def upper(text_input):
+        upper_text = []
+        floor_lower = ord('a')
+        ceil_lower = ord('z')
+        floor_upper = ord('A')
+        diff = floor_lower - floor_upper
+        for char in text_input:
+            char_value = ord(char)
+            if char_value > floor_lower and floor_lower <= char_value <= ceil_lower:
+                upper_text.append(chr(char_value-diff))
+            else:
+                upper_text.append(char)
+        return ''.join(upper_text)

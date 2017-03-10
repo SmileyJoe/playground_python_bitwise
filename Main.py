@@ -27,4 +27,4 @@ else:
     pprint("Not Premium")
 
 pprint("Has Duplicate: " + str(Text.has_duplicate_char("Cody")))
-pprint(ord('a') - ord('A'))
+pprint("Upper: " + Text.upper("Cody-&cODy"))
