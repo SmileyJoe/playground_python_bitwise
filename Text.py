@@ -18,15 +18,25 @@ class Text:
 
     @staticmethod
     def upper(text_input):
-        upper_text = []
         floor_lower = ord('a')
         ceil_lower = ord('z')
         floor_upper = ord('A')
-        diff = floor_lower - floor_upper
+        return Text.__convert(text_input, floor_lower, ceil_lower, floor_lower - floor_upper)
+
+    @staticmethod
+    def lower(text_input):
+        floor_lower = ord('a')
+        floor_upper = ord('A')
+        ceil_upper = ord('Z')
+        return Text.__convert(text_input, floor_upper, ceil_upper, floor_upper - floor_lower)
+
+    @staticmethod
+    def __convert(text_input, floor, ceil, diff):
+        text = []
         for char in text_input:
             char_value = ord(char)
-            if char_value > floor_lower and floor_lower <= char_value <= ceil_lower:
-                upper_text.append(chr(char_value-diff))
+            if char_value > floor and floor <= char_value <= ceil:
+                text.append(chr(char_value - diff))
             else:
-                upper_text.append(char)
-        return ''.join(upper_text)
+                text.append(char)
+        return ''.join(text)

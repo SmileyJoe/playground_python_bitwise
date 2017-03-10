@@ -28,3 +28,4 @@ else:
 
 pprint("Has Duplicate: " + str(Text.has_duplicate_char("Cody")))
 pprint("Upper: " + Text.upper("Cody-&cODy"))
+pprint("Lower: " + Text.lower("Cody-&cODy"))
