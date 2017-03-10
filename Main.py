@@ -1,5 +1,6 @@
 from pprint import pprint
 from Bit import Bit
+from Text import Text
 
 pprint("Hello world")
 
@@ -24,3 +25,6 @@ if setting.is_set(IS_PREMIUM):
     pprint("Premium")
 else:
     pprint("Not Premium")
+
+pprint("Has Duplicate: " + str(Text.has_duplicate_char("Cody")))
+pprint(ord('a') - ord('A'))
