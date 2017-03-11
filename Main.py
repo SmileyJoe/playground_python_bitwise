@@ -31,10 +31,11 @@ pprint("Has Duplicate: " + str(Text.has_duplicate_char("Cody")))
 pprint("Upper: " + Text.upper("Cody-&cODy"))
 pprint("Lower: " + Text.lower("Cody-&cODy"))
 
-pprint("{0:b}".format(100))
-pprint("{0:b}".format(97))
-pprint("{0:b}".format(197))
-
 pprint("Add: " + str(Math.add(5, 5)))
 
 pprint("End")
+
+pprint(ord('a'))
+pprint(ord('z'))
+pprint(ord('A'))
+pprint(ord('Z'))
