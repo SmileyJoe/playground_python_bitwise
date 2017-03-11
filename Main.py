@@ -1,6 +1,7 @@
 from pprint import pprint
 from Bit import Bit
 from Text import Text
+from Math import Math
 
 pprint("Hello world")
 
@@ -29,3 +30,11 @@ else:
 pprint("Has Duplicate: " + str(Text.has_duplicate_char("Cody")))
 pprint("Upper: " + Text.upper("Cody-&cODy"))
 pprint("Lower: " + Text.lower("Cody-&cODy"))
+
+pprint("{0:b}".format(100))
+pprint("{0:b}".format(97))
+pprint("{0:b}".format(197))
+
+pprint("Add: " + str(Math.add(5, 5)))
+
+pprint("End")
